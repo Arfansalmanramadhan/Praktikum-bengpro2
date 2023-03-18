@@ -1,0 +1,62 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: teal;
+    color: aqua;
+    z-index: 999;
+    height: 15vh;
+}
+.nama{
+    font-size: 0.9em;
+    letter-spacing: 1.5px;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+.nav ul li a {
+    color: aqua;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.nav ul li a:hover {
+    color:rgb(12, 47, 245);
+    
+}
+.nav ul li a:visited {
+    color:aqua;
+    
+}
+/* Membuat navbar */
+/* ukuran desktop */
+@media screen and (max-width:992px) {
+    .nav ul {
+        justify-content: space-between;
+        width: 60%;
+        /* background-color: red; */
+    }
+
+}
+/* ukuran tabel */
+@media screen and (max-width:768px) {
+    .nav ul {
+        width: 50%;
+    }
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+    .nav ul li {
+        justify-content: space-around;
+        
+    }
+    .nama{
+        display: none;
+    }
+}
