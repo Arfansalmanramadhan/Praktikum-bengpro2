@@ -72,10 +72,32 @@
 
 h1{
     font-size: 2em;
+    padding-bottom: 10px;
 }
 h3 {
     font-size: 1.17em;
 }
+/* about */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1.5em;
+}
+.col{
+    flex: 1 0 0%;
+}
+.h1{
+    text-align: center;
+    padding-top: 10px;
+}
+.list li{
+    padding: 0.75em 0.375em;
+    background-color: gray;
+    text-align: center;
+    margin: 2px;
+    border-radius: 10px;
+}
+
 /* ukuran desktop */
 @media screen and (max-width:992px) {
     .nav ul {
@@ -83,12 +105,20 @@ h3 {
         width: 60%;
         /* background-color: red; */
     }
-
+    
 }
 /* ukuran tabel */
 @media screen and (max-width:768px) {
     .nav ul {
         width: 50%;
+    }
+    .md {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .md-2 {
+        flex: 0 0 auto;
+        width: 100%;
     }
 }
 /* ukuran mobile */
