@@ -9,10 +9,10 @@
     left: 0;
     right: 0;
     top: 0;
-    background-color: teal;
-    color: aqua;
+    background-color: rgb(184, 182, 182);
+    color: rgb(104, 99, 99);
     z-index: 999;
-    height: 15vh;
+    height: 10vh;
 }
 .nama{
     font-size: 0.9em;
@@ -25,16 +25,16 @@
     justify-content: space-between;
 }
 .nav ul li a {
-    color: aqua;
+    color: rgb(104, 99, 99);
     text-decoration: none;
     font-size: 0.9em;
 }
 .nav ul li a:hover {
-    color:rgb(12, 47, 245);
+    color:rgb(81, 81, 82);
     
 }
 .nav ul li a:visited {
-    color:aqua;
+    color:rgb(104, 99, 99);
     
 }
 /* Membuat navbar */
@@ -43,7 +43,7 @@
     padding-top: 140px;
     background-color: rgb(211, 209, 209);
     /* width: 50%; */
-    max-height:100vh;
+    max-height:90vh;
     z-index: 99;
 }
 .img {
@@ -51,14 +51,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 30px;
 }
 .img img {
     border-radius: 50%;
-    margin: 10px 0;
+    margin: -10px 0;
     border: solid 5px rgb(71, 65, 65);
-    /* width: 50%; */
     height: 300px;
-    /* object-fit: cover; */
     object-position: bottom;
     
 }
@@ -90,14 +89,59 @@ h3 {
     text-align: center;
     padding-top: 10px;
 }
+/* membuat list */
 .list li{
     padding: 0.75em 0.375em;
-    background-color: gray;
+    background-color: rgb(168, 168, 168);;
     text-align: center;
     margin: 2px;
     border-radius: 10px;
 }
-
+.list  li a {
+    color: rgb(104, 99, 99);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.list  li a:hover {
+    color:rgb(81, 81, 82);
+    
+}
+.list  li a:visited {
+    color:rgb(104, 99, 99);
+    
+}
+/* membuat card */
+.card {
+    position: relative;
+    display: flex;
+    /* max-width: 300px; */
+    max-height: 300px;
+    flex-direction: column;
+    background-color: rgb(168, 168, 168);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin: 2px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.card-judul{
+    display: block;
+    font-size: 1.17em;
+    margin-bottom: 0.5em;
+}
+.waktu {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+.footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(184, 182, 182)  ;
+    padding: 15px;
+}
 /* ukuran desktop */
 @media screen and (max-width:992px) {
     .nav ul {
