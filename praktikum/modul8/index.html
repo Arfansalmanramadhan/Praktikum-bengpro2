@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 8 pengebalan Javascript</title>
+</head>
+
+<body align="center" bgcolor="red">
+    <button onclick="myFunction()">klik Disin</button>
+    <button onclick="ketelu()">Websiter resmi Tel-u</button>
+
+
+    <p id="id">modul8</p>
+    <script>
+        alert("Selamat datang di modul 8");
+        let nama = prompt("Tanya ke seseorang", "");
+        document.write(`<p> Halo ${nama} </p>`);
+        document.write(`<h1>Selamat datang di modul 8</h1>`);
+        document.write(`<hr>`);
+        document.write(`<p>Bengkel Pemrograman II</p>`);
+
+
+        let name = `Arfan`;
+        let age = 20;
+        let gender = "mahasiswa";
+        document.write(`${name} <br>`);
+        document.write(`${age} <br>`);
+        document.write(`${gender} <br>`);
+        document.write(`${typeof (gender)} <br>`);
+
+        function myFunction() {
+            document.getElementById("id").innerHTML = "Lagi belajar Laravel";
+        }
+        function ketelu() {
+            let yakin = confirm("Apakah kamu yakin ingin melanjutkan");
+            if (yakin) {
+                window.location = "https://www.youtube.com/playlist?list=PLnrs9DcLyeJTG-_mjD68Gn0sC5hbzaU2T";
+            } else {
+                document.write("Praktikum Selesai")
+
+                window.location = "index.html";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
