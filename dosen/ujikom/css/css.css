@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(156, 153, 153);
+}
+.main {
+    max-width: 100%;
+    background-color: white;
+    margin: 0.75em 0.375em;
+    border-radius: 5px;
+    padding: 10px;
+} 
+
+.tabel {
+    padding: 20px 0;
+    /* margin: auto 5px; */
+}
+.regis{
+    display: flex;
+    justify-content: center;
+}
+.label {
+    margin: 20px 0;
+}
+
+.input {
+    padding: .40em 5em;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1 solid gray;
+    font-weight: bold;
+}
+h1 {
+    padding-bottom:20px ;
+    padding-top:10px ;
+}
+.btn {
+    padding: .555em .655em;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: auto 7px;
+}
+.biru {
+    background-color: blue;
+    color: white;
+}
+.biru:hover {
+    background-color: rgb(8, 8, 214);
+}
+.biru:visited {
+    background-color: blue;
+}
+.jingga {
+    background-color: orange;
+    color: white;
+}
+.jingga:hover {
+    background-color: rgb(219, 150, 22);
+}
+.jingga:visited {
+    background-color: orange;
+}
+th, td{
+    padding: 5px 50px;
+}
+@media screen and (max-width: 1200px) {
+    .main {
+        max-width: 1150px;
+    }
+    th, td{
+        padding: 5px 45px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .main {
+        max-width: 990px;
+    }
+    th, td{
+        padding: 5px 20px;
+    }
+}
+@media screen and (max-width:768px) {
+    .main {
+        max-width:765px;
+    }
+    th, td{
+        padding: 5px 15px;
+    }
+}   
